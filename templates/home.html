@@ -1,18 +1,17 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SP Communications</title>
+{% extends 'base.html' %}
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
+{% block title %}
+Home | SP Communications
+{% endblock %}
 
-    <h1>Welcome to SP Communications</h1>
+{% block content %}
 
-    <p>Your Trusted Destination for Premium Mobile Accessories.</p>
+{% include 'components/hero.html' %}
 
-</body>
-</html>
+{% include 'components/categories.html' %}
+
+{% include 'components/products.html' %}
+
+{% include 'components/features.html' %}
+
+{% endblock %}
